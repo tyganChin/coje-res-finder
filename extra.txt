@@ -1,0 +1,38 @@
+const puppeteer = require('puppeteer');
+
+async function runPuppeteer(accountName) {
+    console.time('TimerLabel');
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+
+    // Navigate to the website
+    await page.goto('https://www.instagram.com/kingjames/?hl=en', { waitUntil: 'networkidle2' });
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    const html = await page.content();
+    if (html.includes('x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1gslohp x1i64zmx x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1')) {
+        console.log("verified");
+    } else {
+        console.log("not verified");
+    }
+
+
+    console.timeEnd('TimerLabel');
+    // '.x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1gslohp x1i64zmx x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1'
+    // // Input text into the input box
+    // await page.type('.mantine-Input-input mantine-TextInput-input mantine-1m3mwmb', accountName);
+
+    // // Click the submit button
+    // await page.click('.mantine-UnstyledButton-root mantine-Button-root mantine-esdesc');
+
+    // // Wait for the result to appear and retrieve the text
+    // await page.waitForSelector('.class="mantine-Text-root mantine-ka4iqp');
+    // const result = await page.$eval('.mantine-Text-root mantine-ka4iqp', el => el.textContent);
+
+    // console.log(result);
+
+    await browser.close();
+}
+
+// Call the function with a test account name
+runPuppeteer('troyesivan');

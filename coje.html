@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CojeResFinder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header class="title-font">Welcome to Coje Res-Finder</header>
+    <p class="description">Check reservation times for all of the Coje restaurants all at once</p>
+    <form id="form">
+        <input type="date" class="button" id="date" name="date" required>
+        <select id="time" class="button" name="time">
+            <option value="" selected="" disabled="">Time</option>
+            <option value="2300">11:00 PM</option>
+            <option value="2230">10:30 PM</option>
+            <option value="2200">10:00 PM</option>
+            <option value="2130">9:30 PM</option>
+            <option value="2100">9:00 PM</option>
+            <option value="2030">8:30 PM</option>
+            <option value="2000">8:00 PM</option>
+            <option value="1930">7:30 PM</option>
+            <option value="1900">7:00 PM</option>
+            <option value="1830">6:30 PM</option>
+            <option value="1800">6:00 PM</option>
+            <option value="1730">5:30 PM</option>
+            <option value="1700">5:00 PM</option>
+            <option value="1630">4:30 PM</option>
+            <option value="1600">4:00 PM</option>
+            <option value="1530">3:30 PM</option>
+            <option value="1500">3:00 PM</option>
+            <option value="1430">2:30 PM</option>
+            <option value="1400">2:00 PM</option>
+            <option value="1330">1:30 PM</option>
+            <option value="1300">1:00 PM</option>
+            <option value="1230">12:30 PM</option>
+            <option value="1200">12:00 PM</option>
+            <option value="1130">11:30 AM</option>
+            <option value="1100">11:00 AM</option>
+        </select>
+        <select id="guests" class="button" name="guests">
+            <option value="" selected="" disabled="">Guests</option>
+            <option value="1">1 guests</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6">6 guests</option>
+            <option value="7">7 guests</option>
+            <option value="8">8 guests</option>
+            <option value="9">9 guests</option>
+            <option value="10">10 guests</option>
+        </select>
+        <button id="submit" class="button">Submit</button>
+    </form>
+    <div id="result" class="resContainer"></div>
+
+ 
+
+    
+    <script src="display.js"></script>
+</body>
+</html>

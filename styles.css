@@ -1,0 +1,90 @@
+
+body {
+    margin: 0;
+    font-family: 'Courier New';
+    color: #cfcece;
+    background-color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.top-bar {
+    height: 150px;
+    width: 100%;
+    background-image: url('images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* padding: 10px 0; */
+    text-align: center;
+    display: flex; /* Use flexbox to center the content */
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+.title-font{
+    font-family: 'Courier New';
+    font-size: 50px;
+}
+
+.description{
+    font-family: 'Courier New';
+    font-size: 16px;
+}
+
+.button {
+    font-family: 'Courier New'
+}
+
+.logoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Add some space between the logo and the rest of the content */
+}
+
+.logo {
+    height: auto;
+    width: 80%; /* Set a fixed width to ensure consistency */
+    display: block; /* Block display to respect the container's width */
+    margin: 0 auto;
+}
+.resContainer {
+    margin-top: 30px;
+    width: 70%;
+    display: flex; /* Use flexbox to center the content */
+    align-items: flex-start;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.resCol {
+    width: 16.6%;
+    display: flex; /* Use flexbox to center the content */
+    flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+}
+
+.timesContainter {
+    display: block; /* Make it a block-level element */
+    margin-top: 10px; /* Add margin between link and times */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+}
+
+.time {
+    width: 100%;
+    display: flex; /* Use flexbox to center the content */
+    flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+}
+
+
+
+/* #result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
